@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/postImage"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_below="@id/postUsername"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/postUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="rheo"
+                android:textSize="24sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/postTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/postImage"
+                android:layout_marginRight="10dp"
+                android:layout_alignRight="@id/postImage"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/white"
+                android:text="7:20 PM on 24/10/2019" />
+
+            <ImageView
+                android:id="@+id/postLike"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/postImage"
+                app:srcCompat="@drawable/heart_empty"
+
+                />
+
+            <TextView
+                android:id="@+id/postLikes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 likes"
+                android:layout_below="@id/postLike"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp" />
+
+            <ImageView
+                android:id="@+id/postComment"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/chat"
+                android:layout_below="@id/postImage"
+                android:layout_marginLeft="60dp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
