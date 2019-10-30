@@ -39,11 +39,11 @@ This is a clone of Instagram with basic features.
 
 - Fork the repository 
 
-- In Android Studio, File->New->Project from Version Control->Github
+- In Android Studio, go to File->New->Project from Version Control->Github
 
 ## How this app works
 
-User creates his account via Firebase Password Based Authentication.When a new user is registered the ***userName*** is first checked from existing userNames and then user creates account.User views all the posts on the next activity.The posts are retrieved from Firebase Cloud Firestore, the structure is like this:-
+User creates his account via Firebase Password Based Authentication.When a new user is registered the ***userName*** is checked from existing userNames and then account is created.User views all the posts on the next activity.The posts are retrieved from Firebase Cloud Firestore, the structure is like this:-
 
 | Collection/Document  | Fields |
 | ------------- | ------------- |
