@@ -28,3 +28,48 @@ This is a clone of Instagram with basic features
 
 - [View all comments](https://github.com/rheo-chiti/InstagramClone/blob/master/app/src/main/java/com/example/chat/ViewComments.java)
 
+## How to run this on your system
+
+- Install Android Studio from [here](https://developer.android.com/studio)
+
+- Install Git from [here](https://git-scm.com/downloads)
+
+- Fork the repository 
+
+- In Android Studio, File->New->Project from Version Control->Github
+
+## How this app works
+
+User creates his account via Firebase Password Based Authentication.When a new user is registered the ***userName*** is first checked from existing userNames and then user creates account.User views all the posts on the next activity.The posts are retrieved from Firebase Cloud Firestore, the structure is like this:-
+
+| Collection/Document  | Fields |
+| ------------- | ------------- |
+| Photo  |   |
+| TimeStamp  | userName , timeStamp , imageURL , likes  |       
+| Likes  |   |       
+| TimeStamp  | userName |       
+
+When user creates a post,the image is uploaded at Firebase Cloud Storage ,then it's download URL is saved at ***imageURL***.When user likes a photo the ***likes*** value is incremented and username is added in the ***userName*** field,if user removes his like then it is removed and subsequently ***likes*** value is decremented.The comments are also retrieved from Firebase Cloud Firestore, the structure is like this:-
+
+| Collection/Document  | Fields |
+| ------------- | ------------- |
+| Photo  |   |
+| TimeStamp  | userName , timeStamp , imageURL , likes  |       
+| Comments  |   |       
+| TimeStamp  | userName , timeStamp , commentText |    
+
+## Future Features
+
+- Image Caching
+
+- Push Notifications
+
+- Chat Feature
+
+## Devices Tested On
+
+| Device  | Android Version | Skin/ROM |
+| ------------- | ------------- | ------------- |
+| Realme 1  |  Android 9.0 | ColorOS |
+| OnePlus 5T  |  Android 9.0 | OxygenOS |
+| Redmi Note 5 Pro  |  Android 9.0 | MIUI 10 |
