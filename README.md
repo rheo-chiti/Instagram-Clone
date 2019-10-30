@@ -1,7 +1,7 @@
 # Instagram-Clone
 This is a clone of Instagram with basic features.
 ## Screenshots
-![alt text](https://github.com/rheo-chiti/InstagramClone/blob/master/app/src/main/res/drawable/5d71072f-b117-448d-9ebd-11d8a3a62e47.jfif)![alt text](https://github.com/rheo-chiti/InstagramClone/blob/master/app/src/main/res/drawable/42e07529-3a3d-4efb-ad3b-8741a43b918d.jfif)![alt text](https://github.com/rheo-chiti/InstagramClone/blob/master/app/src/main/res/drawable/f6fb6a7b-bc09-471f-bfce-24c262f26ee4.jfif)
+![alt text](https://github.com/rheo-chiti/InstagramClone/blob/master/app/src/main/res/drawable/755370b5-d145-4b6b-9c15-25f9819f2b6c.jfif) ![alt text](https://github.com/rheo-chiti/InstagramClone/blob/master/app/src/main/res/drawable/4c82aef8-4c23-42b6-8be9-b9e9a59f085a%20(1).jfif) ![alt text](https://github.com/rheo-chiti/InstagramClone/blob/master/app/src/main/res/drawable/032e3638-100e-4888-94bd-13c88c84af45.jfif)
 
 ## Features
 
