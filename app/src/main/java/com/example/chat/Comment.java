@@ -35,5 +35,10 @@ public class Comment {
     public void setCommentText(String commentText) {
         this.commentText = commentText;
     }
+
+    @Override
+    public String toString() {
+        return this.getUserName() + " " + this.getCommentText() + " " + this.getTimeStamp();
+    }
 }
 
